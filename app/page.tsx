@@ -23,7 +23,7 @@ export default function Home() {
       <div>
         <div>
           <p>{name} // {roles[0]}</p>
-          <h1>{title}</h1>
+          <h1 className="font-sora">{title}</h1>
           <button>{exploreWorkButtonText}</button>
           <button>{downloadResumeButtonText}</button>
         </div>
