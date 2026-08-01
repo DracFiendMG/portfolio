@@ -25,3 +25,9 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.btn-secondary {
+  @apply bg-white font-mono px-6 py-2.5;
+  box-shadow: 3px 4px 0 #00F0FF;
+  /* shadow-[-10px_0_0_0_#00F0FF] shadow-[10px_0_0_0_#00F0FF] */
+}

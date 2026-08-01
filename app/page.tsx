@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   const name = "Sreeram Reddy Velagala"
   const roles = ["Senior Software Engineer", "Full-Stack Developer"]
-  const title = "Engineering High-Performance Full-Stack Systems & AI Frontiers"
+  const title = ["Engineering", "High-Performance", "Full-Stack Systems & AI Frontiers"]
   const subtitle = "Building high-performance financial systems & LLM-integrated platforms."
   const exploreWorkButtonText = "Explore My Work"
   const downloadResumeButtonText = "Download Resume"
@@ -17,19 +17,32 @@ export default function Home() {
 
   // Section 4: Call to Action
   const section4Title = "Ready to engineer your next high-performance system?"
+
+  const modifiedTitle = title.map((word, idx) => {
+    if (idx === 1) {
+      return <p key={idx} className="text-[#9e8b8b]">{word}</p>
+    }
+    return <p key={idx}>{word}</p>
+  })
   
   return (
     <>
       <div>
-        <div>
-          <p>{name} // {roles[0]}</p>
-          <h1 className="font-sora">{title}</h1>
-          <button>{exploreWorkButtonText}</button>
-          <button>{downloadResumeButtonText}</button>
-        </div>
-        <div>
-          <p>{roles.join(" / ")}</p>
-          <p>{subtitle}</p>
+        <div className="flex gap-10 min-h-160 justify-center">
+          <div className="flex flex-col gap-4 relative">
+            <p className="uppercase font-mono text-[12px] text-[#535353] tracking-[0.16em]">{roles.join(" / ")}</p>
+            <div className="max-w-175">
+              <h1 className="uppercase font-sora font-extrabold text-7xl tracking-tighter">{modifiedTitle}</h1>
+            </div>
+            <div className="flex gap-4">
+              <button className="btn-secondary text-[12px]">{exploreWorkButtonText}</button>
+              <button className="btn-secondary text-[12px]">{downloadResumeButtonText}</button>
+            </div>
+          </div>
+          <div className="flex flex-col gap-2 border-3 max-w-72.5 p-4 self-end">
+            <p className="uppercase font-mono text-[12px] text-[#535353]">{roles.join(" / ")}</p>
+            <p className="font-bold font-inter text-black">{subtitle}</p>
+          </div>
         </div>
       </div>
       <div>
