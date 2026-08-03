@@ -24,6 +24,7 @@ export default function Home() {
     {
       icon: "architecture",
       title: "Tech Stack",
+      techstack: ["Java", "Spring Boot", "React", "Next.js", "Node.js", "Python", "PostgreSQL", "MongoDB", "Redis"],
     }
   ]
 
@@ -70,11 +71,24 @@ export default function Home() {
               return (
                 <div 
                   key={card.icon} 
-                  className="flex flex-col gap-2 border-3 border-black min-w-75 card-shadow px-8 py-10 text-black even:bg-black even:text-[#00F0FF]"
+                  className="flex flex-col gap-2 border-3 border-black min-w-75 card-shadow px-8 py-10 text-black even:bg-black even:[&>h3,&>span]:text-[#00F0FF]"
                 >
                   <span className="material-symbols-outlined text-4xl! mb-6">{card.icon}</span>
-                  <h3 className="font-bold font-inter">{card.title}</h3>
-                  <p className="font-light font-inter">{card.description}</p>
+                  <h3 className="uppercase font-medium font-sora text-2xl">{card.title}</h3>
+                  <p className="font-light font-sora text-[#737373]">{card.description}</p>
+                  {
+                    card.techstack && (
+                      <div className="flex flex-wrap gap-2 font-inter">
+                        {
+                          card.techstack.map(tech => {
+                            return (
+                              <span key={tech} className="border-2 px-2 py-1">{tech}</span>
+                            )
+                          })
+                        }
+                      </div>
+                    )
+                  }
                 </div>
               )
             })
