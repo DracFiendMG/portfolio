@@ -65,7 +65,7 @@ export default function Home() {
       <div className="m-10">
         <h2 className="uppercase font-sora text-5xl font-extrabold">{section2Title}</h2>
         <div className="border-4 w-33 mt-5 mb-10"></div>
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {
             cardDetails.map(card => {
               return (
