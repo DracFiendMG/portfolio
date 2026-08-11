@@ -45,11 +45,11 @@ export default function Home() {
   return (
     <>
       <div>
-        <div className="flex gap-10 min-h-160 justify-between m-10">
-          <div className="flex flex-col gap-4 relative">
+        <div className="flex flex-col gap-10 min-h-160 w-screen justify-between m-10 md:flex-row">
+          <div className="flex flex-col gap-4">
             <p className="uppercase font-mono text-[12px] text-[#535353] tracking-[0.16em]">{roles.join(" / ")}</p>
             <div className="max-w-175">
-              <h1 className="uppercase font-sora font-extrabold text-7xl tracking-tighter">{modifiedTitle}</h1>
+              <h1 className="uppercase font-sora font-extrabold text-6xl md:text-7xl tracking-tighter">{modifiedTitle}</h1>
             </div>
             <div className="flex gap-4">
               <button className="btn-secondary text-[12px]">{exploreWorkButtonText}</button>
