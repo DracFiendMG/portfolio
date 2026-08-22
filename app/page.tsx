@@ -99,13 +99,21 @@ export default function Home() {
         <h2 className="uppercase font-sora text-3xl md:text-5xl font-extrabold">{section3Title}</h2>
         <div className="flex flex-col md:flex-row gap-2">
           <p className="font-light font-sora text-[#737373]">{section3Subtitle}</p>
-          <p className="uppercase font-sora">View All Projects</p>
+          <p className="uppercase font-sora text-sm">View All Projects</p>
         </div>
-        <div>
-          Project1
-        </div>
-        <div>
-          Project2
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
+          <div className="relative flex flex-col gap-2">
+            <Image src="/atomic-chess.png" alt="Atomic Chess" width={500} height={300} className="relative w-full h-auto border-2 border-black" />
+            <p className="uppercase absolute top-3 right-3 bg-black text-white text-xs font-mono px-4 py-1">AI / Game Dev</p>
+            <h3 className="uppercase font-sora text-xl md:text-2xl font-bold">Atomic Chess</h3>
+            <p className="font-light font-sora text-[#737373]">A custom engine implementing Alpha-Beta pruning with move-ordering heuristics and a React-based interactive frontend.</p>
+          </div>
+          <div className="relative flex flex-col gap-2">
+            <Image src="/atomic-chess.png" alt="Movie AI App" width={500} height={300} className="relative w-full h-auto border-2 border-black" />
+            <p className="uppercase absolute top-3 right-3 bg-black text-white text-xs font-mono px-4 py-1">AI / Full Stack</p>
+            <h3 className="uppercase font-sora text-xl md:text-2xl font-bold">Movie AI App</h3>
+            <p className="font-light font-sora text-[#737373]">Semantic search and personalized recommendation engine powered by OpenAI embeddings and a Java backend infrastructure.</p>
+          </div>
         </div>
       </div>
       <div>
