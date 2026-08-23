@@ -44,8 +44,8 @@ export default function Home() {
   
   return (
     <>
-      <div>
-        <div className="flex flex-col gap-10 md:min-h-160 justify-between m-5 md:m-10 md:flex-row">
+      <section className="mx-5 my-10 md:m-10 max-w-360 md:w-[calc(100%-5rem)] box-content">
+        <div className="flex md:min-h-160 md:justify-between">
           <div className="flex flex-col gap-4">
             <p className="uppercase font-mono text-[12px] text-[#535353] tracking-[0.16em]">{roles.join(" / ")}</p>
             <div className="md:max-w-175">
@@ -61,8 +61,8 @@ export default function Home() {
             <p className="font-bold font-inter text-black">{subtitle}</p>
           </div>
         </div>
-      </div>
-      <div className="m-5 md:m-10">
+      </section>
+      <section className="mx-5 my-10 md:m-10 max-w-360">
         <h2 className="uppercase font-sora text-3xl md:text-5xl font-extrabold">{section2Title}</h2>
         <div className="border-2 md:border-4 w-[33%] md:w-33 mt-3 md:mt-5 mb-8 md:mb-10"></div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -94,33 +94,39 @@ export default function Home() {
             })
           }
         </div>
-      </div>
-      <div className="m-5 md:m-10">
+      </section>
+      <section className="mx-5 my-10 md:m-10 flex flex-col gap-5 max-w-360">
         <h2 className="uppercase font-sora text-3xl md:text-5xl font-extrabold">{section3Title}</h2>
-        <div className="flex flex-col md:flex-row gap-2">
-          <p className="font-light font-sora text-[#737373]">{section3Subtitle}</p>
-          <p className="uppercase font-sora text-sm">View All Projects</p>
+        <div className="flex flex-col md:flex-row gap-2 md:justify-between md:items-end">
+          <p className="font-light font-sora text-[#737373] md:max-w-[50%]">{section3Subtitle}</p>
+          <p className="uppercase font-sora font-semibold text-sm">View All Projects</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
           <div className="relative flex flex-col gap-2">
-            <Image src="/atomic-chess.png" alt="Atomic Chess" width={500} height={300} className="relative w-full h-auto border-2 border-black" />
+            <Image src="/atomic-chess.png" alt="Atomic Chess" width={500} height={300} className="relative w-full h-auto border-2 border-black mb-5" />
             <p className="uppercase absolute top-3 right-3 bg-black text-white text-xs font-mono px-4 py-1">AI / Game Dev</p>
             <h3 className="uppercase font-sora text-xl md:text-2xl font-bold">Atomic Chess</h3>
             <p className="font-light font-sora text-[#737373]">A custom engine implementing Alpha-Beta pruning with move-ordering heuristics and a React-based interactive frontend.</p>
+            <p className="uppercase font-sora text-sm font-semibold flex gap-2"><span className="material-symbols-outlined">arrow_outward</span>Case Study</p>
           </div>
           <div className="relative flex flex-col gap-2">
-            <Image src="/atomic-chess.png" alt="Movie AI App" width={500} height={300} className="relative w-full h-auto border-2 border-black" />
+            <Image src="/atomic-chess.png" alt="Movie AI App" width={500} height={300} className="relative w-full h-auto border-2 border-black mb-5" />
             <p className="uppercase absolute top-3 right-3 bg-black text-white text-xs font-mono px-4 py-1">AI / Full Stack</p>
             <h3 className="uppercase font-sora text-xl md:text-2xl font-bold">Movie AI App</h3>
-            <p className="font-light font-sora text-[#737373]">Semantic search and personalized recommendation engine powered by OpenAI embeddings and a Java backend infrastructure.</p>
+            <p className="font-light font-sora text-sm text-[#737373]">Semantic search and personalized recommendation engine powered by OpenAI embeddings and a Java backend infrastructure.</p>
+            <p className="uppercase font-sora text-sm font-semibold flex gap-2"><span className="material-symbols-outlined">arrow_outward</span>View Demo</p>
           </div>
         </div>
-      </div>
-      <div>
-        <h2>{section4Title}</h2>
-        <button>{exploreWorkButtonText}</button>
-        <button>{downloadResumeButtonText}</button>
-      </div>
+      </section>
+      <section className="bg-black md:w-full flex justify-center">
+        <div className="p-5 md:p-10 flex flex-col gap-10 max-w-360 h-100 justify-center">
+          <h2 className="uppercase font-sora text-3xl md:text-5xl font-extrabold text-white max-w-240 text-center">Ready to engineer your next <span className="text-[#00F0FF]">high-performance system?</span></h2>
+          <div className="flex flex-col md:flex-row gap-5 md:gap-10 items-center justify-center">
+            <button className="uppercase text-sm bg-white px-10 py-4 font-inter font-semibold w-60">{exploreWorkButtonText}</button>
+            <button className="uppercase text-sm bg-white px-10 py-4 font-inter font-semibold w-60">{downloadResumeButtonText}</button>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
