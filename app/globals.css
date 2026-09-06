@@ -43,3 +43,10 @@ body {
 .box {
   @apply flex flex-col gap-2 border-3 max-w-72.5 p-4 self-end
 }
+
+.grid-lines {
+  background-image: 
+      linear-gradient(to right, #e3e2e2 1px, transparent 1px),
+      linear-gradient(to bottom, #e3e2e2 1px, transparent 1px);
+  background-size: 40px 40px;
+}
