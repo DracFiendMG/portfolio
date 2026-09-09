@@ -2,7 +2,6 @@ import Image from "next/image";
 
 export default function Home() {
     // Section 1: Hero Section
-    const name = "Sreeram Reddy Velagala"
     const roles = ["Senior Software Engineer", "Full-Stack Developer"]
     const title = ["Engineering", "High - Performance", "Full - Stack Systems & AI Frontiers"]
     const subtitle = "Building high-performance financial systems & LLM-integrated platforms."
