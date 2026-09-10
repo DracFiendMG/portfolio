@@ -29,9 +29,8 @@ export default function Header() {
     }, [isMenuOpen])
 
     return (
-        <header className="flex justify-between relative w-full">
-            <span className="material-symbols-outlined my-class" onClick={handleMenuClick}>menu</span>
-            <h1>{firstname}</h1>
+        <header className="flex my-5 px-5 justify-between relative w-full">
+            <h1 className="uppercase font-sora font-bold flex items-center gap-2"><span className="material-symbols-outlined my-class" onClick={handleMenuClick}>menu</span>{firstname}</h1>
             <nav ref={menuRef} className={`${isMenuOpen ? '' : 'hidden'} fixed bg-white h-screen z-1000`}>
                 <Link href="/home">Home</Link>
                 <Link href="/about">About</Link>
