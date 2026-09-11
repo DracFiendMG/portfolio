@@ -40,6 +40,10 @@ body {
   box-shadow: 8px 8px 0 0 black;
 }
 
+.no-card-shadow {
+  box-shadow: none;
+}
+
 .box {
   @apply flex flex-col gap-2 border-3 max-w-72.5 p-4 self-end
 }
