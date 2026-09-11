@@ -63,7 +63,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="max-w-360 grid-lines bg-gray-100">
+            <section className="max-w-360 grid-lines bg-gray-100 box-content mx-auto">
                 <div className="mx-5 my-10 md:m-10 py-10">
                     <h2 className="uppercase font-sora text-3xl md:text-5xl font-extrabold">{section2Title}</h2>
                     <div className="border-2 md:border-4 w-[33%] md:w-33 mt-3 md:mt-5 mb-8 md:mb-10"></div>
