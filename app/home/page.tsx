@@ -44,7 +44,7 @@ export default function Home() {
 
     return (
         <>
-            <section className="mx-5 my-10 md:m-10 max-w-360 md:w-[calc(100%-5rem)] box-content">
+            <section className="mx-5 my-10 md:m-10 max-w-360 md:w-[calc(100%-5rem)] box-content justify-self-center">
                 <div className="flex md:min-h-160 md:justify-between">
                     <div className="flex flex-col gap-4">
                         <p className="uppercase font-mono text-[12px] text-[#535353] tracking-[0.16em]">{roles.join(" / ")}</p>
@@ -63,8 +63,8 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="max-w-360 grid-lines bg-gray-100 box-content mx-auto">
-                <div className="mx-5 my-10 md:m-10 py-10">
+            <section className="w-full grid-lines bg-gray-100">
+                <div className="mx-auto max-w-360 px-5 py-10 md:px-0">
                     <h2 className="uppercase font-sora text-3xl md:text-5xl font-extrabold">{section2Title}</h2>
                     <div className="border-2 md:border-4 w-[33%] md:w-33 mt-3 md:mt-5 mb-8 md:mb-10"></div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -99,7 +99,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="mx-5 my-10 md:m-10 flex flex-col gap-5 max-w-360 py-10">
+            <section className="mx-5 my-10 md:m-10 flex flex-col gap-5 max-w-360 py-10 justify-self-center">
                 <h2 className="uppercase font-sora text-3xl md:text-5xl font-extrabold">{section3Title}</h2>
                 <div className="flex flex-col md:flex-row gap-2 md:justify-between md:items-end">
                     <p className="font-light font-sora text-[#737373] md:max-w-[50%]">{section3Subtitle}</p>
@@ -123,9 +123,14 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="bg-black md:w-full flex justify-center grid-lines py-10">
+            <section className="w-full bg-black flex justify-center grid-lines py-10">
                 <div className="p-5 md:p-10 flex flex-col gap-10 max-w-360 h-100 justify-center">
-                    <h2 className="uppercase font-sora text-3xl md:text-5xl font-extrabold text-white max-w-240 text-center">Ready to engineer your next <span className="text-[#00F0FF]">high-performance system?</span></h2>
+                    <h2 className="uppercase font-sora text-3xl md:text-5xl font-extrabold text-white max-w-240 text-center">
+                        Ready to engineer your next
+                        <span className="text-[#00F0FF]">
+                            high-performance system?
+                        </span>
+                    </h2>
                     <div className="flex flex-col md:flex-row gap-5 md:gap-10 items-center justify-center">
                         <button className="uppercase text-sm bg-white px-10 py-4 font-mono font-semibold w-60 hover:shadow-[6px_8px_0_0_#00F0FF] duration-100">{exploreWorkButtonText}</button>
                         <button className="uppercase text-sm bg-white px-10 py-4 font-mono font-semibold w-60">{downloadResumeButtonText}</button>
