@@ -64,7 +64,7 @@ export default function Home() {
             </section>
 
             <section className="w-full grid-lines bg-gray-100">
-                <div className="mx-auto max-w-360 px-5 py-10 md:px-0">
+                <div className="mx-auto max-w-360 px-5 py-10">
                     <h2 className="uppercase font-sora text-3xl md:text-5xl font-extrabold">{section2Title}</h2>
                     <div className="border-2 md:border-4 w-[33%] md:w-33 mt-3 md:mt-5 mb-8 md:mb-10"></div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
