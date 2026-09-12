@@ -84,7 +84,7 @@ export default function Home() {
                                                     {
                                                         card.techstack.map(tech => {
                                                             return (
-                                                                <span key={tech} className="border-2 px-2 py-1">{tech}</span>
+                                                                <span key={tech} className="border-2 px-2 py-1 bg-gray-300">{tech}</span>
                                                             )
                                                         })
                                                     }
