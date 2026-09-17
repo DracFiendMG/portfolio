@@ -28,10 +28,23 @@ export default function Projects() {
                 <div className="mb-4">
                     <Filter tags={uniqueTags} selectedTags={selectedTags} onTagClick={handleTagClick} />
                 </div>
-                <div className="grid grid-cols-1 gap-4">
-                    {projects.map(project => {
+                <div className="grid grid-cols-1 gap-4 md:grid-cols-12">
+                    {projects.map((project, index) => {
+                        // Predefined patterns for 12-column grid pairs
+                        const patterns = [
+                            ['md:col-span-5', 'md:col-span-7'],
+                            ['md:col-span-8', 'md:col-span-4'],
+                            ['md:col-span-6', 'md:col-span-6'],
+                            ['md:col-span-7', 'md:col-span-5'],
+                            ['md:col-span-4', 'md:col-span-8'],
+                        ];
+                        const rowIndex = Math.floor(index / 2);
+                        const spanClass = patterns[rowIndex % patterns.length][index % 2];
+                        
                         return (
-                            <Project key={project.name} project={project} />
+                            <div key={project.name} className={spanClass}>
+                                <Project project={project} />
+                            </div>
                         )
                     })}
                 </div>
