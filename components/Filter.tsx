@@ -41,9 +41,6 @@ export default function Filter({ tags, selectedTags, onTagClick }: { tags: strin
                     onClick={() => setIsExpanded((expanded) => !expanded)}
                     className="mt-2 flex items-center gap-1 font-mono text-xs uppercase underline underline-offset-4"
                 >
-                    <span className="material-symbols-outlined text-base" aria-hidden="true">
-                        {isExpanded ? "expand_less" : "expand_more"}
-                    </span>
                     {isExpanded ? "Show less" : "Show all tags"}
                 </button>
             )}

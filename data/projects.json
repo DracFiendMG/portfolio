@@ -1,224 +1,224 @@
 [
   {
     "name": "portfolio",
-    "url": "https://github.com/DracFiendMG/portfolio",
+    "github": "https://github.com/DracFiendMG/portfolio",
     "description": "Personal portfolio website with a brutalist visual design.",
     "tech_stack": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     "image": "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsYXh5fGVufDB8fDB8fHww"
   },
   {
     "name": "food-rating-app",
-    "url": "https://github.com/DracFiendMG/food-rating-app",
+    "github": "https://github.com/DracFiendMG/food-rating-app",
     "description": "Mobile app for scanning packaged food and checking its health rating.",
     "tech_stack": ["Expo", "React Native", "TypeScript", "MongoDB", "Axios"],
     "image": "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsYXh5fGVufDB8fDB8fHww"
   },
   {
     "name": "food-rating-app-backend",
-    "url": "https://github.com/DracFiendMG/food-rating-app-backend",
+    "github": "https://github.com/DracFiendMG/food-rating-app-backend",
     "description": "Backend APIs for the food rating application and Open Food Facts integration.",
     "tech_stack": ["Node.js", "Express", "JavaScript", "MongoDB", "Open Food Facts API"],
     "image": "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsYXh5fGVufDB8fDB8fHww"
   },
   {
     "name": "stock-checker",
-    "url": "https://github.com/DracFiendMG/stock-checker",
+    "github": "https://github.com/DracFiendMG/stock-checker",
     "description": "Cross-platform stock tracking application.",
     "tech_stack": ["Angular", "Ionic", "TypeScript", "Capacitor", "RxJS"],
     "image": "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsYXh5fGVufDB8fDB8fHww"
   },
   {
     "name": "stock-checker-backend",
-    "url": "https://github.com/DracFiendMG/stock-checker-backend",
+    "github": "https://github.com/DracFiendMG/stock-checker-backend",
     "description": "Backend service for the stock checker application.",
     "tech_stack": ["Node.js", "Express", "JavaScript"],
     "image": "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsYXh5fGVufDB8fDB8fHww"
   },
   {
     "name": "portfolio-angular",
-    "url": "https://github.com/DracFiendMG/portfolio-angular",
+    "github": "https://github.com/DracFiendMG/portfolio-angular",
     "description": "Portfolio website built with an Angular frontend and Express backend.",
     "tech_stack": ["Angular", "TypeScript", "Express", "MongoDB", "Mongoose", "Bootstrap"],
     "image": "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsYXh5fGVufDB8fDB8fHww"
   },
   {
     "name": "movie-ai-app",
-    "url": "https://github.com/DracFiendMG/movie-ai-app",
+    "github": "https://github.com/DracFiendMG/movie-ai-app",
     "description": "AI-powered movie application using language models and semantic text processing.",
     "tech_stack": ["JavaScript", "Vite", "OpenAI", "LangChain", "Supabase"],
     "image": "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsYXh5fGVufDB8fDB8fHww"
   },
   {
     "name": "migration-mate",
-    "url": "https://github.com/DracFiendMG/migration-mate",
+    "github": "https://github.com/DracFiendMG/migration-mate",
     "description": "Database migration assistant powered by an agent-based workflow.",
     "tech_stack": ["PostgreSQL", "PL/pgSQL", "AI Agents"],
     "image": "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsYXh5fGVufDB8fDB8fHww"
   },
   {
     "name": "dspy-self-healing-scraper",
-    "url": "https://github.com/DracFiendMG/dspy-self-healing-scraper",
+    "github": "https://github.com/DracFiendMG/dspy-self-healing-scraper",
     "description": "Self-healing web scraping pipeline that adapts to changing page structures.",
     "tech_stack": ["Python", "DSPy", "Web Scraping"],
     "image": "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsYXh5fGVufDB8fDB8fHww"
   },
   {
     "name": "ai-dungeon-master",
-    "url": "https://github.com/DracFiendMG/ai-dungeon-master",
+    "github": "https://github.com/DracFiendMG/ai-dungeon-master",
     "description": "AI-powered interactive dungeon master for text-based adventures.",
     "tech_stack": ["Python", "Streamlit", "Large Language Models"],
     "image": "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsYXh5fGVufDB8fDB8fHww"
   },
   {
     "name": "twimba",
-    "url": "https://github.com/DracFiendMG/twimba",
+    "github": "https://github.com/DracFiendMG/twimba",
     "description": "Twitter-inspired social media application.",
     "tech_stack": ["JavaScript", "Vite", "HTML", "CSS"],
     "image": "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsYXh5fGVufDB8fDB8fHww"
   },
   {
     "name": "restaurant-ordering-app",
-    "url": "https://github.com/DracFiendMG/restaurant-ordering-app",
+    "github": "https://github.com/DracFiendMG/restaurant-ordering-app",
     "description": "Frontend application for browsing a menu and placing restaurant orders.",
     "tech_stack": ["JavaScript", "Vite", "HTML", "CSS"],
     "image": "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsYXh5fGVufDB8fDB8fHww"
   },
   {
     "name": "movie-watchlist",
-    "url": "https://github.com/DracFiendMG/movie-watchlist",
+    "github": "https://github.com/DracFiendMG/movie-watchlist",
     "description": "Movie discovery and watchlist management application.",
     "tech_stack": ["JavaScript", "Vite", "HTML", "CSS"],
     "image": "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsYXh5fGVufDB8fDB8fHww"
   },
   {
     "name": "component-library-pp",
-    "url": "https://github.com/DracFiendMG/component-library-pp",
+    "github": "https://github.com/DracFiendMG/component-library-pp",
     "description": "Collection of reusable frontend components.",
     "tech_stack": ["React", "JavaScript", "Vite", "CSS"],
     "image": "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsYXh5fGVufDB8fDB8fHww"
   },
   {
     "name": "tiny-library",
-    "url": "https://github.com/DracFiendMG/tiny-library",
+    "github": "https://github.com/DracFiendMG/tiny-library",
     "description": "Small library management web application.",
     "tech_stack": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     "image": "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsYXh5fGVufDB8fDB8fHww"
   },
   {
     "name": "atomic-chess",
-    "url": "https://github.com/DracFiendMG/atomic-chess",
+    "github": "https://github.com/DracFiendMG/atomic-chess",
     "description": "Chess-inspired game with atomic explosion mechanics.",
     "tech_stack": ["JavaScript", "Vite", "HTML", "CSS"],
     "image": "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsYXh5fGVufDB8fDB8fHww"
   },
   {
     "name": "mememaker",
-    "url": "https://github.com/DracFiendMG/mememaker",
+    "github": "https://github.com/DracFiendMG/mememaker",
     "description": "Spider-Man themed meme generator based on user preferences.",
     "tech_stack": ["JavaScript", "Vite", "HTML", "CSS"],
     "image": "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsYXh5fGVufDB8fDB8fHww"
   },
   {
     "name": "oldagram",
-    "url": "https://github.com/DracFiendMG/oldagram",
+    "github": "https://github.com/DracFiendMG/oldagram",
     "description": "Instagram-inspired social media feed displaying photo posts.",
     "tech_stack": ["JavaScript", "Vite", "HTML", "CSS"],
     "image": "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsYXh5fGVufDB8fDB8fHww"
   },
   {
     "name": "learning-journal",
-    "url": "https://github.com/DracFiendMG/learning-journal",
+    "github": "https://github.com/DracFiendMG/learning-journal",
     "description": "Journal and blog-style application for recording learning progress.",
     "tech_stack": ["JavaScript", "Vite", "HTML", "CSS"],
     "image": "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsYXh5fGVufDB8fDB8fHww"
   },
   {
     "name": "rubiks-cube-solver",
-    "url": "https://github.com/DracFiendMG/rubiks-cube-solver",
+    "github": "https://github.com/DracFiendMG/rubiks-cube-solver",
     "description": "Interactive Rubik's Cube solver using Kociemba's algorithm.",
     "tech_stack": ["TypeScript", "React", "Expo", "Kociemba Algorithm"],
     "image": "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsYXh5fGVufDB8fDB8fHww"
   },
   {
     "name": "RubiksCubeSolver",
-    "url": "https://github.com/DracFiendMG/RubiksCubeSolver",
+    "github": "https://github.com/DracFiendMG/RubiksCubeSolver",
     "description": "Python implementation of a Rubik's Cube model and solving algorithm.",
     "tech_stack": ["Python", "Kociemba Algorithm", "PyTest"],
     "image": "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsYXh5fGVufDB8fDB8fHww"
   },
   {
     "name": "algebraic.equation",
-    "url": "https://github.com/DracFiendMG/algebraic.equation",
+    "github": "https://github.com/DracFiendMG/algebraic.equation",
     "description": "Java utility for storing and evaluating algebraic equations.",
     "tech_stack": ["Java"],
     "image": "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsYXh5fGVufDB8fDB8fHww"
   },
   {
     "name": "weather-info",
-    "url": "https://github.com/DracFiendMG/weather-info",
+    "github": "https://github.com/DracFiendMG/weather-info",
     "description": "Application that provides weather details based on a pincode.",
     "tech_stack": ["Java", "REST API"],
     "image": "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsYXh5fGVufDB8fDB8fHww"
   },
   {
     "name": "waterquality-microservice",
-    "url": "https://github.com/DracFiendMG/waterquality-microservice",
+    "github": "https://github.com/DracFiendMG/waterquality-microservice",
     "description": "Scheduled service that evaluates water quality using monitoring data.",
     "tech_stack": ["Java", "Spring Boot", "Microservices"],
     "image": "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsYXh5fGVufDB8fDB8fHww"
   },
   {
     "name": "monitoring-microservice",
-    "url": "https://github.com/DracFiendMG/monitoring-microservice",
+    "github": "https://github.com/DracFiendMG/monitoring-microservice",
     "description": "Microservice that reads monitoring data from CSV files and stores it.",
     "tech_stack": ["Java", "Spring Boot", "Microservices", "Database"],
     "image": "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsYXh5fGVufDB8fDB8fHww"
   },
   {
     "name": "api-gateway",
-    "url": "https://github.com/DracFiendMG/api-gateway",
+    "github": "https://github.com/DracFiendMG/api-gateway",
     "description": "API gateway connecting the water quality and monitoring services.",
     "tech_stack": ["Java", "Spring Boot", "API Gateway", "Microservices"],
     "image": "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsYXh5fGVufDB8fDB8fHww"
   },
   {
     "name": "go-microservice",
-    "url": "https://github.com/DracFiendMG/go-microservice",
+    "github": "https://github.com/DracFiendMG/go-microservice",
     "description": "Containerized microservice implemented in Go.",
     "tech_stack": ["Go", "Docker", "REST API"],
     "image": "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsYXh5fGVufDB8fDB8fHww"
   },
   {
     "name": "EDPlayer",
-    "url": "https://github.com/DracFiendMG/EDPlayer",
+    "github": "https://github.com/DracFiendMG/EDPlayer",
     "description": "Mood detection application that analyzes user input.",
     "tech_stack": ["C#", ".NET", "Machine Learning"],
     "image": "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsYXh5fGVufDB8fDB8fHww"
   },
   {
     "name": "Housing-Price-Prediction-ML",
-    "url": "https://github.com/DracFiendMG/Housing-Price-Prediction-ML",
+    "github": "https://github.com/DracFiendMG/Housing-Price-Prediction-ML",
     "description": "Machine learning project for predicting housing prices.",
     "tech_stack": ["Python", "Machine Learning", "Data Analysis"],
     "image": "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsYXh5fGVufDB8fDB8fHww"
   },
   {
     "name": "pong",
-    "url": "https://github.com/DracFiendMG/pong",
+    "github": "https://github.com/DracFiendMG/pong",
     "description": "Classic Pong game implementation.",
     "tech_stack": ["Lua", "LÖVE"],
     "image": "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsYXh5fGVufDB8fDB8fHww"
   },
   {
     "name": "travel-journal",
-    "url": "https://github.com/DracFiendMG/travel-journal",
+    "github": "https://github.com/DracFiendMG/travel-journal",
     "description": "React-based static travel journal website.",
     "tech_stack": ["React", "JavaScript", "Vite", "CSS"],
     "image": "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsYXh5fGVufDB8fDB8fHww"
   },
   {
     "name": "airbnb-demo",
-    "url": "https://github.com/DracFiendMG/airbnb-demo",
+    "github": "https://github.com/DracFiendMG/airbnb-demo",
     "description": "Static Airbnb-inspired accommodation browsing page.",
     "tech_stack": ["JavaScript", "HTML", "CSS"],
     "image": "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsYXh5fGVufDB8fDB8fHww"

@@ -28,7 +28,7 @@ export default function Projects() {
                 <div className="mb-4">
                     <Filter tags={uniqueTags} selectedTags={selectedTags} onTagClick={handleTagClick} />
                 </div>
-                <div>
+                <div className="grid grid-cols-1 gap-4">
                     {projects.map(project => {
                         return (
                             <Project key={project.name} project={project} />
