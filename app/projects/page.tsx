@@ -30,9 +30,17 @@ export default function Projects() {
     }
 
     const getMappedProjects = () => {
+        const colSpanMap: Record<number, string> = {
+            4: "md:col-span-4",
+            5: "md:col-span-5",
+            6: "md:col-span-6",
+            7: "md:col-span-7",
+            8: "md:col-span-8",
+        };
+
         return projects.map((project, index) => {
 
-            const spanClass = `md:col-span-${randColSpans[index]}`
+            const spanClass = colSpanMap[randColSpans[index]] || "md:col-span-6";
 
             return (
                 <div key={project.name} className={spanClass}>
@@ -61,7 +69,7 @@ export default function Projects() {
                 <div className="mb-4">
                     <Filter tags={uniqueTags} selectedTags={selectedTags} onTagClick={handleTagClick} />
                 </div>
-                <div className="grid grid-cols-1 gap-4 md:grid-cols-12 my-10">
+                <div className="grid grid-cols-1 gap-4 md:grid-cols-12 md:gap-6 my-10">
                     {projectsList}
                 </div>
             </section>
