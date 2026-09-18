@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function Project({ project }: { project: Project }) {
     return (
-        <div className="flex flex-col gap-4 border-2">
-            <Image src={project.image} alt={project.name} width={500} height={500} />
+        <div className="flex flex-col gap-4 border-2 md:h-full">
+            <Image src={project.image} alt={project.name} width={1000} height={1000} />
             <div className="flex flex-col gap-4 p-4 font-sora">
                 <div className="flex flex-wrap gap-2">
                     {

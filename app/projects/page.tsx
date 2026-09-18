@@ -1,13 +1,46 @@
 'use client';
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import projects from "@/data/projects.json";
 import Filter from "../../components/Filter";
 import Project from "../../components/Project";
 
 export default function Projects() {
     const uniqueTags = [...new Set(projects.flatMap(project => project.tech_stack))]
-    const [selectedTags, setSelectedTags] = useState<string[]>([]);
+    const [randColSpans] = useState<number[]>(getRandColSpans(projects.length))
+    const [selectedTags, setSelectedTags] = useState<string[]>([])
+    const [projectsList, setProjectsList] = useState<React.ReactNode[]>([])
+
+    useEffect(() => {
+        setProjectsList(getMappedProjects())
+    }, [])
+
+    function getRandColSpans(count: number): number[] {
+        let colSpans: number[] = []
+        let rand = 6
+        for (let i = 0; i < count; i++) {
+            if (i % 2 === 0) {
+                rand = Math.floor((Math.random() * 5) + 4)
+                colSpans.push(rand)
+            } else {
+                colSpans.push(12 - rand)
+            }
+        }
+        return colSpans
+    }
+
+    const getMappedProjects = () => {
+        return projects.map((project, index) => {
+
+            const spanClass = `md:col-span-${randColSpans[index]}`
+
+            return (
+                <div key={project.name} className={spanClass}>
+                    <Project project={project} />
+                </div>
+            )
+        })
+    }
 
     const handleTagClick = (tag: string) => {
         setSelectedTags((currentTags) =>
@@ -28,25 +61,8 @@ export default function Projects() {
                 <div className="mb-4">
                     <Filter tags={uniqueTags} selectedTags={selectedTags} onTagClick={handleTagClick} />
                 </div>
-                <div className="grid grid-cols-1 gap-4 md:grid-cols-12">
-                    {projects.map((project, index) => {
-                        // Predefined patterns for 12-column grid pairs
-                        const patterns = [
-                            ['md:col-span-5', 'md:col-span-7'],
-                            ['md:col-span-8', 'md:col-span-4'],
-                            ['md:col-span-6', 'md:col-span-6'],
-                            ['md:col-span-7', 'md:col-span-5'],
-                            ['md:col-span-4', 'md:col-span-8'],
-                        ];
-                        const rowIndex = Math.floor(index / 2);
-                        const spanClass = patterns[rowIndex % patterns.length][index % 2];
-                        
-                        return (
-                            <div key={project.name} className={spanClass}>
-                                <Project project={project} />
-                            </div>
-                        )
-                    })}
+                <div className="grid grid-cols-1 gap-4 md:grid-cols-12 my-10">
+                    {projectsList}
                 </div>
             </section>
             <section>
