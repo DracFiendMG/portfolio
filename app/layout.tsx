@@ -40,9 +40,9 @@ export default function RootLayout({
       <head>
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"></link>
       </head>
-      <body className="min-h-full flex flex-col items-center">
+      <body className="min-h-full flex flex-col items-center overflow-x-hidden w-full">
         <Header />
-        <main className="grid w-full">{children}</main>
+        <main className="grid w-full min-w-0">{children}</main>
         <Footer />
       </body>
     </html>

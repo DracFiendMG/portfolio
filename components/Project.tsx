@@ -1,8 +1,8 @@
-import type { Project } from "@/features/types";
+import type { ProjectDetails } from "@/features/types";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Project({ project }: { project: Project }) {
+export default function Project({ project }: { project: ProjectDetails }) {
     return (
         <div className="flex flex-col gap-4 border-3 md:h-full project-card duration-300 transition-all hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_8px_0_0_#00F0FF] bg-white">
             <Image src={project.image} alt={project.name} width={1000} height={1000} />
@@ -16,8 +16,8 @@ export default function Project({ project }: { project: Project }) {
                         })
                     }
                 </div>
-                <h1 className="font-bold text-4xl uppercase">{project.name}</h1>
-                <p className="text-[#737373] font-inter">{project.description}</p>
+                <h1 className="font-bold text-2xl sm:text-4xl uppercase break-all sm:break-words">{project.name}</h1>
+                <p className="text-[#737373] font-inter text-sm sm:text-base break-words">{project.description}</p>
                 {/* <Link href={project.github}>View Project</Link> */}
             </div>
         </div>

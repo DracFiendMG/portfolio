@@ -1,4 +1,4 @@
-export interface Project {
+export interface ProjectDetails {
     name: string
     description: string
     github: string
