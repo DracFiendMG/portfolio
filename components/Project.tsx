@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Project({ project }: { project: Project }) {
     return (
-        <div className="flex flex-col gap-4 border-2 md:h-full project-card">
+        <div className="flex flex-col gap-4 border-3 md:h-full project-card duration-300 transition-all hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_8px_0_0_#00F0FF] bg-white">
             <Image src={project.image} alt={project.name} width={1000} height={1000} />
             <div className="flex flex-col gap-4 p-4 font-sora">
                 <div className="flex flex-wrap gap-2">
@@ -16,8 +16,8 @@ export default function Project({ project }: { project: Project }) {
                         })
                     }
                 </div>
-                <h1>{project.name}</h1>
-                <p>{project.description}</p>
+                <h1 className="font-bold text-4xl uppercase">{project.name}</h1>
+                <p className="text-[#737373] font-inter">{project.description}</p>
                 {/* <Link href={project.github}>View Project</Link> */}
             </div>
         </div>

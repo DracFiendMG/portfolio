@@ -73,8 +73,12 @@ export default function Projects() {
                     {projectsList}
                 </div>
             </section>
-            <section>
-
+            <section className="my-15 md:mb-25 md:mt-35 flex flex-col md:flex-row gap-4 md:justify-between md:items-center">
+                <h2 className="text-xl md:text-2xl font-bold uppercase font-sora">Ready to start a new project?</h2>
+                <div className="flex gap-4">
+                    <button className="uppercase font-mono font-semibold text-xs bg-black text-white px-8 py-3">Book a call</button>
+                    <button className="uppercase font-mono font-semibold text-xs bg-white text-black border-3 px-8 py-3">Inquire</button>
+                </div>
             </section>
         </div>
     )

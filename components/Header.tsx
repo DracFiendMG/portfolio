@@ -68,9 +68,9 @@ export default function Header() {
                         Contact
                     </Link>
                 </nav>
-                <button className="group row-start-3 mx-5 mb-5 mt-auto grid min-h-11 w-45 grid-flow-col place-content-center gap-2 bg-black py-3 font-mono font-semibold text-white duration-100 transition-transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_8px_0_0_#00F0FF] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#00F0FF] md:col-start-3 md:row-start-1 md:m-0 md:justify-self-end">
+                <button className="group row-start-3 mx-5 mb-5 mt-auto grid min-h-11 w-45 grid-flow-col place-content-center gap-2 bg-black py-3 font-mono font-semibold text-white duration-300 transition-all hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_8px_0_0_#00F0FF] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#00F0FF] md:col-start-3 md:row-start-1 md:m-0 md:justify-self-end">
                     Connect
-                    <span className="material-symbols-outlined text-base transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+                    <span className="material-symbols-outlined text-base transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
                         arrow_outward
                     </span>
                 </button>
