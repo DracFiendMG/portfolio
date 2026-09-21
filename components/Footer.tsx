@@ -4,6 +4,8 @@ export default function Footer() {
     const firstname = "Sreeram Reddy"
     const lastname = "Velagala"
 
+    // TODO: Fix the footer, its uneven
+
     return (
         <footer className="bg-black w-full p-10 font-sora text-center">
             <div className="mx-auto grid max-w-360 grid-cols-1 justify-items-center gap-5 text-center md:grid-cols-3 md:items-center">
