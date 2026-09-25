@@ -24,19 +24,26 @@ export default function Resume() {
             </section>
             <section className="grid grid-cols-1 md:grid-cols-12 gap-4">
                 <div>
-                    <h2 className="uppercase text-sm font-mono">Work Experience</h2>
-                    <div>
+                    <h2 className="uppercase text-sm font-mono my-4">Work Experience</h2>
+                    <div className='flex flex-col gap-6'>
                         {workExperience.map((experience: Experience, index: number) => {
                             return (
-                                <div key={index}>
-                                    <p>{experience.from} - {experience.to}</p>
-                                    <div>
-                                        <p>{experience.designation}</p>
-                                        <p>{experience.company} - {experience.location}</p>
-                                        <div>
-                                            {experience.responsibilities.map((res, idx)=>(
-                                                <p key={idx}>{res}</p>
-                                            ))}
+                                <div key={index} className='flex flex-col gap-2'>
+                                    <p className='uppercase font-mono text-sm'>{experience.from} - {experience.to}</p>
+                                    <div className='flex flex-col gap-3'>
+                                        <div className='flex flex-col gap-1'>
+                                            <p className='text-lg uppercase font-sora font-bold'>{experience.designation}</p>
+                                            <p className='text-[#00929b] text-sm uppercase font-mono'>{experience.company} • {experience.location}</p>
+                                        </div>
+                                        <div className='flex flex-col gap-2'>
+                                            {experience.responsibilities.map((res, idx) => {
+                                                return (
+                                                    <div className='flex gap-4' key={idx}>
+                                                        <span>—</span>
+                                                        <p className='font-inter'>{res}</p>
+                                                    </div>
+                                                )
+                                            })}
                                         </div>
                                     </div>
                                 </div>
