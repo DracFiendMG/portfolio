@@ -1,3 +1,6 @@
+import workExperience from '@/data/work_experience.json'
+import type { Experience } from '@/features/types'
+
 export default function Resume() {
     return (
         <div className="mx-auto w-[calc(100%-2.5rem)] md:w-[calc(100%-5rem)] max-w-360 flex flex-col gap-6">
@@ -19,9 +22,27 @@ export default function Resume() {
                     </button>
                 </div>
             </section>
-            <section>
+            <section className="grid grid-cols-1 md:grid-cols-12 gap-4">
                 <div>
-                    Work Experience
+                    <h2 className="uppercase text-sm font-mono">Work Experience</h2>
+                    <div>
+                        {workExperience.map((experience: Experience, index: number) => {
+                            return (
+                                <div key={index}>
+                                    <p>{experience.from} - {experience.to}</p>
+                                    <div>
+                                        <p>{experience.designation}</p>
+                                        <p>{experience.company} - {experience.location}</p>
+                                        <div>
+                                            {experience.responsibilities.map((res, idx)=>(
+                                                <p key={idx}>{res}</p>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                        })}
+                    </div>
                 </div>
                 <div>
                     Education
