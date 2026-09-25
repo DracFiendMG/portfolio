@@ -1,0 +1,59 @@
+[
+  {
+    "from": "2026-04",
+    "to": "Present",
+    "designation": "Senior Software Engineer",
+    "company": "Wipro Limited",
+    "location": "Hyderabad, India",
+    "responsibilities": [
+      "Develop and maintain core backend services for AdviceWorks, a financial advisory platform serving thousands of advisors, while also building interactive frontend features using Angular, HTML, CSS, and JavaScript as a full‑stack developer.",
+      "Debug and resolve defects across production and lower environments, ensuring system stability and minimizing downtime.",
+      "Communicate directly with clients to gather requirements, clarify technical details, and manage expectations.",
+      "Actively participate in all Agile ceremonies including sprint planning, daily standups, retrospectives, and refinement calls – communicating proactively with team members and stakeholders wherever required.",
+      "Use basic Kubernetes (k8s) commands to inspect pods, view logs, and troubleshoot deployed services.",
+      "Leverage GitHub Copilot extensively—writing custom instructions, prompts, and building reusable coding agents to accelerate development and automate repetitive tasks.",
+      "Apply advanced Git commands for branch management, rebasing, bisect, and resolving merge conflicts.",
+      "Write and optimize PostgreSQL queries, including complex joins, indexing, and query plan analysis.",
+      "Implement new features end‑to‑end, from UI components in Angular to backend logic in Spring Boot.",
+      "Implement asynchronous event-driven workflows using RabbitMQ to process client data and trigger alerts.",
+      "Optimize SQL queries and introduce Redis caching",
+      "Lead code reviews, refactoring efforts, and mentor 2 junior engineers."
+    ]
+  },
+  {
+    "from": "2022-12",
+    "to": "2026-03",
+    "designation": "Project Engineer",
+    "company": "Wipro Limited",
+    "location": "Hyderabad, India",
+    "responsibilities": [
+      "Key Contributor to Oracle Retail Xstore POS Solution (v23.1) as a Java Full Stack Developer: Developed and maintained end-to-end features for high-volume retail POS systems used by major global retailers, ensuring reliability in mission-critical environments.",
+      "Successfully Delivered Full-Stack Features for a Premier Luxury Fashion Brand: Implemented new customer experience features for a high-profile luxury client’s POS system, requiring attention to detail and adherence to premium brand standards.",
+      "Transformed Legacy Monolithic Retail Applications into Modern Microservices: Re-architected core monolithic Java components into scalable microservices, significantly improving system modularity and maintainability.",
+      "Streamlined Order and Return Management for Tier-1 Retailers: Engineered and optimized order and return management modules for large enterprise retailers, ensuring seamless omnichannel experiences.",
+      "Leveraged Advanced AI and Cloud-Native Technologies: Implemented AI-driven features and cloud-native patterns to modernize the Oracle Retail Xstore POS solution, enhancing performance and scalability.",
+      "Engineered Performance-Critical Logging and Monitoring Infrastructure: Developed a comprehensive logging and monitoring framework, drastically reducing system downtime and improving operational efficiency.",
+      "Implemented Secure Authentication and Authorization Workflows: Engineered robust security features, including multi-factor authentication and role-based access control, safeguarding sensitive retail data.",
+      "Built Reusable, Modular Enterprise POS Components: Developed a suite of enterprise-grade POS components, enhancing development velocity and maintainability across multiple client implementations.",
+      "Collaborated in Agile Teams to Deliver High-Quality Retail Solutions: Worked in Agile/Scrum environments to deliver high-quality retail solutions, ensuring timely releases and continuous improvement."
+    ]
+  },
+  {
+    "from": "2022-11",
+    "to": "2022-12",
+    "designation": "Software Developer Intern",
+    "company": "TestRight Nanosystems",
+    "location": "Noida, India",
+    "responsibilities": [
+      "Key Contributor to Oracle Retail Xstore POS Solution (v23.1) as a Java Full Stack Developer: Developed and maintained end-to-end features for high-volume retail POS systems used by major global retailers, ensuring reliability in mission-critical environments.",
+      "Successfully Delivered Full-Stack Features for a Premier Luxury Fashion Brand: Implemented new customer experience features for a high-profile luxury client’s POS system, requiring attention to detail and adherence to premium brand standards.",
+      "Transformed Legacy Monolithic Retail Applications into Modern Microservices: Re-architected core monolithic Java components into scalable microservices, significantly improving system modularity and maintainability.",
+      "Streamlined Order and Return Management for Tier-1 Retailers: Engineered and optimized order and return management modules for large enterprise retailers, ensuring seamless omnichannel experiences.",
+      "Leveraged Advanced AI and Cloud-Native Technologies: Implemented AI-driven features and cloud-native patterns to modernize the Oracle Retail Xstore POS solution, enhancing performance and scalability.",
+      "Engineered Performance-Critical Logging and Monitoring Infrastructure: Developed a comprehensive logging and monitoring framework, drastically reducing system downtime and improving operational efficiency.",
+      "Implemented Secure Authentication and Authorization Workflows: Engineered robust security features, including multi-factor authentication and role-based access control, safeguarding sensitive retail data.",
+      "Built Reusable, Modular Enterprise POS Components: Developed a suite of enterprise-grade POS components, enhancing development velocity and maintainability across multiple client implementations.",
+      "Collaborated in Agile Teams to Deliver High-Quality Retail Solutions: Worked in Agile/Scrum environments to deliver high-quality retail solutions, ensuring timely releases and continuous improvement."
+    ]
+  }
+]
