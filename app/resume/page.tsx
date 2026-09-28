@@ -81,7 +81,7 @@ export default function Resume() {
                                         <div className='flex flex-col gap-2'>
                                             {experience.responsibilities.map((res, idx) => {
                                                 return (
-                                                    <div className='flex gap-4' key={idx}>
+                                                    <div className='flex gap-4 text-[#2F3131]' key={idx}>
                                                         <span className='font-mono'>{idx < 9 ? '0' : ''}{idx + 1}</span>
                                                         <p className='font-inter'>{res}</p>
                                                     </div>
@@ -102,23 +102,34 @@ export default function Resume() {
                         </div>
                         <p className='uppercase text-xs text-[#737373] font-mono'>Credentials</p>
                     </div>
-                    {education.map((edu: Education, idx: number) => {
-                        return (
-                            <div key={idx} className='flex flex-col gap-2 bg-[#F0F1F1] p-8'>
-                                <div>
-                                    <p>{edu.to} - {edu.from}</p>
-                                    <p>CGPA: {edu.cgpa} / 10.0</p>
+                    <div className='flex flex-col gap-4'>
+                        {education.map((edu: Education, idx: number) => {
+                            return (
+                                <div key={idx} className='flex flex-col gap-2 bg-[#F0F1F1] p-8'>
+                                    <div className='font-mono text-xs flex justify-between items-center'>
+                                        <p>{edu.to} - {edu.from}</p>
+                                        <p className='bg-[#00F0FF] px-2 py-0.5 font-bold'>CGPA: {edu.cgpa} / 10.0</p>
+                                    </div>
+                                    <h2 className='uppercase text-lg font-bold font-sora'>{edu.degree}</h2>
+                                    <p className='font-inter font-medium'>{edu.college}</p>
+                                    <div className='font-inter text-[#2F3131]'>
+                                        {
+                                            edu.learnings.join(", ")
+                                        }
+                                    </div>
                                 </div>
-                                <h2>{edu.degree}</h2>
-                                <p>{edu.college}</p>
-                                <div>
-                                    {
-                                        edu.learnings.join(", ")
-                                    }
-                                </div>
-                            </div>
-                        )
-                    })}
+                            )
+                        })}
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div>
+                        
+                    </div>
                 </div>
             </section>
             <section>
