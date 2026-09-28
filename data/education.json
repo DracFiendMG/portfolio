@@ -1,12 +1,34 @@
 [
   {
+    "from": 2024,
+    "to": 2026,
     "degree": "Masters in Computer Applications",
     "college": "SRM University, Chennai",
-    "cgpa": "9.58"
+    "cgpa": "9.58",
+    "learnings": [
+      "Advanced Java",
+      "Optimization Techniques",
+      "Artificial Intelligence & Machine Learning",
+      "Android Application Development",
+      "Web Technologies"
+    ]
   },
   {
+    "from": 2018,
+    "to": 2022,
     "degree": "B.E Computer Science and Engineering",
     "college": "Government Engineering College, Dahod",
-    "cgpa": "8.3"
+    "cgpa": "8.3",
+    "learnings": [
+      "Object Oriented Programming",
+      "Data Structure & Algorithms",
+      "Database Management Systems",
+      "Computer Networks",
+      "Software Engineering",
+      "Discrete Mathematics",
+      "C Programming",
+      "Digital Logic Design",
+      "Compiler Design"
+    ]
   }
 ]

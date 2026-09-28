@@ -16,7 +16,10 @@ export interface Experience {
 }
 
 export interface Education {
+    from: number
+    to: number
     degree: string
     college: string
     cgpa: string
+    learnings: string[]
 }

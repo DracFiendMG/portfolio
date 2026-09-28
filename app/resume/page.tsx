@@ -1,5 +1,6 @@
 import workExperience from '@/data/work_experience.json'
-import type { Experience } from '@/features/types'
+import education from '@/data/education.json'
+import type { Experience, Education } from '@/features/types'
 
 export default function Resume() {
     return (
@@ -63,11 +64,14 @@ export default function Resume() {
             </section>
             <section className="grid grid-cols-1 md:grid-cols-12 gap-4">
                 <div className='md:col-span-7'>
-                    <h2 className="uppercase text-sm font-mono my-4">Work Experience</h2>
+                    <div className='flex items-center my-4 gap-4'>
+                        <p className='uppercase font-mono text-xs bg-black text-white px-2 py-1'>Exp.01</p>
+                        <h2 className="uppercase text-xl font-sora font-bold">Work Experience</h2>
+                    </div>
                     <div className='flex flex-col gap-6'>
                         {workExperience.map((experience: Experience, index: number) => {
                             return (
-                                <div key={index} className='flex flex-col gap-2'>
+                                <div key={index} className='flex flex-col gap-2 bg-[#F0F1F1] p-8'>
                                     <p className='uppercase font-mono text-sm'>{experience.from} - {experience.to}</p>
                                     <div className='flex flex-col gap-3'>
                                         <div className='flex flex-col gap-1'>
@@ -78,7 +82,7 @@ export default function Resume() {
                                             {experience.responsibilities.map((res, idx) => {
                                                 return (
                                                     <div className='flex gap-4' key={idx}>
-                                                        <span>—</span>
+                                                        <span className='font-mono'>{idx < 9 ? '0' : ''}{idx + 1}</span>
                                                         <p className='font-inter'>{res}</p>
                                                     </div>
                                                 )
@@ -91,7 +95,30 @@ export default function Resume() {
                     </div>
                 </div>
                 <div className='md:col-span-5'>
-                    Education
+                    <div className='flex justify-between items-center my-4 gap-4'>
+                        <div className='flex items-center gap-4'>
+                            <p className='uppercase font-mono text-xs bg-black text-white px-2 py-1'>Acad.02</p>
+                            <h2 className="uppercase text-xl font-sora font-bold">Education</h2>
+                        </div>
+                        <p className='uppercase text-xs text-[#737373] font-mono'>Credentials</p>
+                    </div>
+                    {education.map((edu: Education, idx: number) => {
+                        return (
+                            <div key={idx} className='flex flex-col gap-2 bg-[#F0F1F1] p-8'>
+                                <div>
+                                    <p>{edu.to} - {edu.from}</p>
+                                    <p>CGPA: {edu.cgpa} / 10.0</p>
+                                </div>
+                                <h2>{edu.degree}</h2>
+                                <p>{edu.college}</p>
+                                <div>
+                                    {
+                                        edu.learnings.join(", ")
+                                    }
+                                </div>
+                            </div>
+                        )
+                    })}
                 </div>
             </section>
             <section>
