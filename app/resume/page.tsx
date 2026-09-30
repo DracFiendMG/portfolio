@@ -1,8 +1,18 @@
+"use client"
+
 import workExperience from '@/data/work_experience.json'
 import education from '@/data/education.json'
-import type { Experience, Education } from '@/features/types'
+import projects from '@/data/projects.json'
+import type { Experience, Education, ProjectDetails } from '@/features/types'
+import { useEffect, useState } from 'react'
 
 export default function Resume() {
+    const [featuredProjects, setFeaturedProjects] = useState<ProjectDetails[]>([])
+
+    useEffect(() => {
+        setFeaturedProjects(projects.slice(0, 2))
+    }, [])
+
     return (
         <div className="mx-auto w-[calc(100%-2.5rem)] md:w-[calc(100%-5rem)] max-w-360 flex flex-col gap-6">
             <section className="flex flex-col gap-10 mt-4 md:mt-8">
@@ -62,7 +72,7 @@ export default function Resume() {
                     </div>
                 </div>
             </section>
-            <section className="grid grid-cols-1 md:grid-cols-12 gap-4">
+            <section className="grid grid-cols-1 md:grid-cols-12 gap-4 md:grid-flow-dense">
                 <div className='md:col-span-7'>
                     <div className='flex items-center my-4 gap-4'>
                         <p className='uppercase font-mono text-xs bg-black text-white px-2 py-1'>Exp.01</p>
@@ -122,14 +132,48 @@ export default function Resume() {
                         })}
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <p></p>
-                        <p></p>
+                <div className='md:col-span-5'>
+                    <div className='flex justify-between items-center my-4 gap-4'>
+                        <div className='flex items-center gap-4'>
+                            <p className='uppercase font-mono text-xs bg-black text-white px-2 py-1'>Proj.03</p>
+                            <h2 className="uppercase text-xl font-sora font-bold">Featured Projects</h2>
+                        </div>
                     </div>
-                    <div>
-                        
+                    <div className='flex flex-col gap-4'>
+                        {featuredProjects.map((project, idx) => {
+                            return (
+                                <div key={idx} className='p-8 flex flex-col gap-4 bg-[#F0F1F1]'>
+                                    <div className='flex justify-between'>
+                                        <p>Placeholder</p>
+                                        <p className='material-symbols-outlined'>sports_esports</p>
+                                    </div>
+                                    <div className='flex flex-col gap-4'>
+                                        <h2 className='uppercase text-lg font-bold font-sora'>{project.name}</h2>
+                                        <p className='font-inter font-medium'>{project.description}</p>
+                                        <div className='flex gap-2 items-center flex-wrap'>
+                                            {project.tech_stack.map((tech, tidx) => {
+                                                return (
+                                                    <span key={tidx} className='font-mono text-xs bg-[#00F0FF] px-2 py-1'>
+                                                        {tech}
+                                                    </span>
+                                                )
+                                            })}
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                        })}
                     </div>
+                </div>
+                <div className='bg-[#F0F1F1] p-8 flex items-center md:col-span-5'>
+                    <div className='flex items-center gap-4'>
+                        <p className='material-symbols-outlined uppercase'>pin_drop</p>
+                        <div>
+                            <p className='text-xs uppercase font-mono text-[#737373]'>Operational Base</p>
+                            <p className='font-inter font-bold'>Hyderabad, Telangana, India</p>
+                        </div>
+                    </div>
+                    <p className='text-xs font-mono bg-[#E2E2E2] px-2 py-1 font-semibold'>UTC+05:30</p>
                 </div>
             </section>
             <section>
