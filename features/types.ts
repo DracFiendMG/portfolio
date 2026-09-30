@@ -23,3 +23,8 @@ export interface Education {
     cgpa: string
     learnings: string[]
 }
+
+export interface Skill {
+    category: string
+    items: string[]
+}

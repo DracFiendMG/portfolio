@@ -3,7 +3,8 @@
 import workExperience from '@/data/work_experience.json'
 import education from '@/data/education.json'
 import projects from '@/data/projects.json'
-import type { Experience, Education, ProjectDetails } from '@/features/types'
+import skills from '@/data/skills.json'
+import type { Experience, Education, ProjectDetails, Skill } from '@/features/types'
 import { useEffect, useState } from 'react'
 
 export default function Resume() {
@@ -14,8 +15,8 @@ export default function Resume() {
     }, [])
 
     return (
-        <div className="mx-auto w-[calc(100%-2.5rem)] md:w-[calc(100%-5rem)] max-w-360 flex flex-col gap-6">
-            <section className="flex flex-col gap-10 mt-4 md:mt-8">
+        <div className="flex flex-col gap-6">
+            <section className="flex flex-col gap-10 mt-4 md:mt-8 mx-auto w-[calc(100%-2.5rem)] md:w-[calc(100%-5rem)] max-w-360">
                 <div className="flex flex-col gap-2 font-mono text-xs md:flex-row md:justify-between">
                     <p className="uppercase text-black bg-[#00F0FF] self-start px-2 py-1 md:tracking-wider">Current Status: Available for work</p>
                     <p className='uppercase text-[#737373]'>LOC: HYDERABAD, IN / EXP: 3+ YEARS</p>
@@ -72,7 +73,7 @@ export default function Resume() {
                     </div>
                 </div>
             </section>
-            <section className="grid grid-cols-1 md:grid-cols-12 gap-6 md:items-start">
+            <section className="grid grid-cols-1 md:grid-cols-12 gap-6 md:items-start mx-auto w-[calc(100%-2.5rem)] md:w-[calc(100%-5rem)] max-w-360 py-10">
                 <div className='md:col-span-7 flex flex-col'>
                     <div className='flex items-center my-4 gap-4'>
                         <p className='uppercase font-mono text-xs bg-black text-white px-2 py-1'>Exp.01</p>
@@ -181,8 +182,35 @@ export default function Resume() {
                     </div>
                 </div>
             </section>
-            <section>
-
+            <section className='bg-[#1B1B1B] py-10'>
+                <div className='mx-auto w-[calc(100%-2.5rem)] md:w-[calc(100%-5rem)] max-w-360'>
+                    <div className='grid grid-cols-1 md:grid-cols-12'>
+                        <div className='uppercase md:col-span-7'>
+                            <p className='text-[#00F0FF] font-mono text-xs'>04 // Capabilities Inventory</p>
+                            <h1 className='uppercase text-white tracking-tight font-sora font-bold text-5xl md:text-7xl'>Technical Toolkit.</h1>
+                        </div>
+                        <p className='font-inter font-medium text-[#ACABAB] md:col-span-5 md:self-end'>A disciplined stack honed over three years of building production-grade fintech platforms and reactive client interfaces under rigorous availability guarantees.</p>
+                    </div>
+                    <div>
+                        {skills.map((skill: Skill, idx: number) => {
+                            return (
+                                <div key={idx}>
+                                    <div>
+                                        <p>{idx + 1} / {skill.category}</p>
+                                        <p>icon</p>
+                                    </div>
+                                    <div>
+                                        {skill.items.map((item, idx) => {
+                                            return (
+                                                <span key={idx}>{item}</span>
+                                            )
+                                        })}
+                                    </div>
+                                </div>
+                            )
+                        })}
+                    </div>
+                </div>
             </section>
             <section>
 
