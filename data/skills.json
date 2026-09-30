@@ -10,7 +10,8 @@
             "Tailwind CSS",
             "SASS",
             "HTML5/CSS3"
-        ]
+        ],
+        "icon": "web"
     },
     {
         "category": "Backend",
@@ -22,7 +23,8 @@
             "REST APIs",
             "Microservices",
             "RabbitMQ"
-        ]
+        ],
+        "icon": "database"
     },
     {
         "category": "AI / ML Tools",
@@ -33,7 +35,8 @@
             "HuggingFace",
             "LLM Orchestration",
             "Prompt Engineering"
-        ]
+        ],
+        "icon": "smart_toy"
     },
     {
         "category": "Database & Cloud",
@@ -46,6 +49,7 @@
             "Git",
             "Postman",
             "JIRA"
-        ]
+        ],
+        "icon": "cloud_sync"
     }
 ]

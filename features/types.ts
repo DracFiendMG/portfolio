@@ -27,4 +27,5 @@ export interface Education {
 export interface Skill {
     category: string
     items: string[]
+    icon: string
 }

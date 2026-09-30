@@ -182,30 +182,31 @@ export default function Resume() {
                     </div>
                 </div>
             </section>
-            <section className='bg-[#1B1B1B] py-10'>
-                <div className='mx-auto w-[calc(100%-2.5rem)] md:w-[calc(100%-5rem)] max-w-360'>
+            <section className='bg-[#1B1B1B] py-20'>
+                <div className='mx-auto w-[calc(100%-2.5rem)] md:w-[calc(100%-5rem)] max-w-360 flex flex-col gap-12'>
                     <div className='grid grid-cols-1 md:grid-cols-12'>
-                        <div className='uppercase md:col-span-7'>
+                        <div className='uppercase md:col-span-7 flex flex-col gap-2'>
                             <p className='text-[#00F0FF] font-mono text-xs'>04 // Capabilities Inventory</p>
                             <h1 className='uppercase text-white tracking-tight font-sora font-bold text-5xl md:text-7xl'>Technical Toolkit.</h1>
                         </div>
                         <p className='font-inter font-medium text-[#ACABAB] md:col-span-5 md:self-end'>A disciplined stack honed over three years of building production-grade fintech platforms and reactive client interfaces under rigorous availability guarantees.</p>
                     </div>
-                    <div>
+                    <div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
                         {skills.map((skill: Skill, idx: number) => {
                             return (
-                                <div key={idx}>
-                                    <div>
-                                        <p>{idx + 1} / {skill.category}</p>
-                                        <p>icon</p>
+                                <div key={idx} className='bg-[#dbdad9]/10 p-8 flex flex-col justify-between gap-4'>
+                                    <div className='text-[#7df4ff] flex items-center justify-between'>
+                                        <p className='font-mono text-xs uppercase'>{idx < 9 ? "0" : ""}{idx + 1} / {skill.category}</p>
+                                        <p className='material-symbols-outlined text-lg!'>{skill.icon}</p>
                                     </div>
-                                    <div>
+                                    <div className='flex flex-wrap gap-2 self-start'>
                                         {skill.items.map((item, idx) => {
                                             return (
-                                                <span key={idx}>{item}</span>
+                                                <span key={idx} className='bg-[#dbdad9]/20 text-white px-2 py-0.5 text-sm font-mono'>{item}</span>
                                             )
                                         })}
                                     </div>
+                                    <p className='text-[#848484] font-mono text-xs'>ACID</p>
                                 </div>
                             )
                         })}
