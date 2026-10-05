@@ -184,10 +184,10 @@ export default function Resume() {
             </section>
             <section className='bg-[#1B1B1B] py-20'>
                 <div className='mx-auto w-[calc(100%-2.5rem)] md:w-[calc(100%-5rem)] max-w-360 flex flex-col gap-12'>
-                    <div className='grid grid-cols-1 md:grid-cols-12'>
+                    <div className='grid grid-cols-1 md:grid-cols-12 gap-4'>
                         <div className='uppercase md:col-span-7 flex flex-col gap-2'>
                             <p className='text-[#00F0FF] font-mono text-xs'>04 // Capabilities Inventory</p>
-                            <h1 className='uppercase text-white tracking-tight font-sora font-bold text-5xl md:text-7xl'>Technical Toolkit.</h1>
+                            <h2 className='uppercase text-white tracking-tight font-sora font-bold text-5xl md:text-7xl'>Technical Toolkit.</h2>
                         </div>
                         <p className='font-inter font-medium text-[#ACABAB] md:col-span-5 md:self-end'>A disciplined stack honed over three years of building production-grade fintech platforms and reactive client interfaces under rigorous availability guarantees.</p>
                     </div>
@@ -196,7 +196,7 @@ export default function Resume() {
                             return (
                                 <div key={idx} className='bg-[#dbdad9]/10 p-8 flex flex-col justify-between gap-4'>
                                     <div className='text-[#7df4ff] flex items-center justify-between'>
-                                        <p className='font-mono text-xs uppercase'>{idx < 9 ? "0" : ""}{idx + 1} / {skill.category}</p>
+                                        <p className='font-mono text-xs uppercase font-bold'>{idx < 9 ? "0" : ""}{idx + 1} / {skill.category}</p>
                                         <p className='material-symbols-outlined text-lg!'>{skill.icon}</p>
                                     </div>
                                     <div className='flex flex-wrap gap-2 self-start'>
@@ -213,8 +213,16 @@ export default function Resume() {
                     </div>
                 </div>
             </section>
-            <section>
-
+            <section className='w-[calc(100%-2.5rem)] md:w-[calc(100%-5rem)] max-w-360 mx-auto bg-[#F0F1F1] p-10 md:p-20 my-20 shadow-lg grid grid-cols-1 gap-6 md:grid-cols-12'>
+                <div className='flex flex-col gap-4 md:col-span-7'>
+                    <p className='font-mono text-xs uppercase'>05 // Engagement Pipeline</p>
+                    <h2 className='font-sora font-bold text-4xl md:text-7xl uppercase break-words hyphens-auto'>Ready to build something structurally sound?</h2>
+                    <p className='font-inter'>Open to full-stack and backend architectural roles, enterprise consultancy, and engineering leadership across high-throughput domains.</p>
+                </div>
+                <div className='flex flex-col sm:flex-row gap-4 items-start md:items-center md:col-span-5'>
+                    <button className='bg-black text-white font-extrabold px-10 py-4 flex gap-4 uppercase text-xs items-center font-mono hover:shadow-[8px_8px_0_0_#00F0FF] hover:transition-all duration-300 hover:-translate-x-1 hover:-translate-y-1 cursor-pointer'>Contact Now</button>
+                    <button className='bg-[#E3E2E2] font-extrabold px-10 py-4 flex gap-4 uppercase text-xs items-center font-mono hover:bg-[#E2E2E2] hover:transition-all duration-300 cursor-pointer'>View Portfolio</button>
+                </div>
             </section>
         </div>
     )
