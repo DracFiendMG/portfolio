@@ -10,7 +10,24 @@ export default function About() {
             </section>
             <section>
                 <div>
+                    <p>// Design Philosophy</p>
+                    <div>
+                        <h2>Raw Logic.</h2>
+                        <h2>Intentional Engineering</h2>
+                    </div>
+                    <p>I believe that great software doesn't hide behind abstraction or technical debt. My work is rooted in Engineering Honesty—a methodology that prioritizes high-performance full-stack architecture and robust, scalable code.</p>
+                    <p>Every line of code must serve a purpose. If it doesn't solve a problem or optimize a function, it shouldn't exist. This engineering approach ensures products are not just functional, but resilient, scalable, and highly maintainable.</p>
+                    <div>
+                        <div>
 
+                        </div>
+                        <div>
+
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
                 </div>
                 <div>
                     
