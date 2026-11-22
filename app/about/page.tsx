@@ -30,14 +30,41 @@ export default function About() {
                     </div>
                 </div>
                 <div>
-                    
+                    // My profile image
                 </div>
             </section>
             <section>
+                <h1>- The Capabilities -</h1>
+                <div>
+                    <div>
 
+                    </div>
+                    <div>
+
+                    </div>
+                    <div>
+
+                    </div>
+                    <div>
+
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
             </section>
             <section>
+                <div>
+                    <h1></h1>
+                    <p></p>
+                    <div>
+                        <button></button>
+                        <button></button>
+                    </div>
+                </div>
+                <div>
 
+                </div>
             </section>
         </div>
     )
