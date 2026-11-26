@@ -8,8 +8,8 @@ export default function About() {
                 </div>
                 <p className="font-inter text-[#737373] md:self-end">Based in Hyderabad, India, engineering high-performance financial systems and LLM-integrated platforms with a focus on technical precision, scalability, and human utility.</p>
             </section>
-            <section>
-                <div>
+            <section className="w-[calc(100%-2.5rem)] md:w-[calc(100%-5rem)] max-w-360 mx-auto grid md:grid-cols-12 gap-5">
+                <div className="md:col-span-7 border-3 p-5 md:p-10">
                     <p>// Design Philosophy</p>
                     <div>
                         <h2>Raw Logic.</h2>
