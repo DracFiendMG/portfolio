@@ -36,7 +36,7 @@ export default function About() {
                     </div>
                 </div>
                 <div>
-                    <Image className="card-shadow" src={profile} alt="My profile image" width={500} height={500}></Image>
+                    <Image className="profile-shadow border-3 border-black" src={profile} alt="My profile image" width={500} height={500}></Image>
                 </div>
             </section>
             <section>

@@ -72,3 +72,7 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.profile-shadow {
+  box-shadow: 10px 10px 0 0 black;
+}
