@@ -1,3 +1,6 @@
+import Image from "next/image";
+import profile from "@/public/profile_copy.jpg";
+
 export default function About() {
     return (
         <div>
@@ -33,7 +36,7 @@ export default function About() {
                     </div>
                 </div>
                 <div>
-                    // My profile image
+                    <Image className="card-shadow" src={profile} alt="My profile image" width={500} height={500}></Image>
                 </div>
             </section>
             <section>
